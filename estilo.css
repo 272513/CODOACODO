@@ -1,0 +1,367 @@
+/* SETEO PREVIO */
+
+:root{
+    --colorfuente: white;
+    --colorhover: rgb(170, 218, 202);
+    --colorfondo: rgb(0, 174, 255);
+    
+    --font-chica: 1em;
+    --font-mediana:1.5em;
+    --font-grande:2em;
+    }
+    
+    *{
+        margin: 0;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    
+    html{
+    font-size: var(--font-chica);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--colorfondo)
+    }
+    ul,ol{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none; 
+    }/*FIN DEL SETEO*/
+
+
+/*PAGINA 1 y TABLAS*/
+
+.pagina1{
+   font-size: var(--font-grande); 
+   color: blue;
+   text-align: left;
+   padding: 5px;
+}
+.sitio p{    
+    color: blue;
+    font-size: 16px;
+
+}
+
+/*@media screen and (max-widht:350px){
+ .sitio { 
+        background-color: darksalmon;
+    }
+    }*/
+section{
+
+    padding: 10px;
+}
+
+/*TABLAS*/
+
+table{
+    width: 100%;
+    border:"1px solid #2b2b2b" cellpadding="5px" cellspacing="2px"
+    }
+    
+    tr{
+        background-color: aqua;
+        color: blue;
+        text-align: center;
+    }
+    th, td{
+        padding: 10px;
+    }
+    tr:hover td{
+        background-color: darkgrey;
+    }
+    tr:hover{
+        background-color: rgb(250, 110, 16);
+    }
+
+/*PAGINA 2*/
+
+.pagina2{
+    font-size: var(--font-grande); 
+    color: blue;
+    text-align: left;
+ }
+
+h2 span{
+    font-size: var(--font-mediana);
+    color:blue
+}
+
+ol li{
+    font-size: var(--font-chica);
+    color: blue;
+    
+}
+.web{
+    font-size: 16px;
+    color: blue;
+    
+}
+
+
+/*FORMULARIO*/
+
+header h1{
+    font-size: 32px; 
+    color: blue;
+    text-align: left;
+ }
+
+main div p{
+    font-size: 20px; 
+    color: firebrick;
+}
+
+textarea{ /*se saca posibilidad de mayor capacidad*/
+    resize: none; 
+ }
+
+ .formulario{
+    font-size: 30px; 
+    color:white;
+    text-align: left;
+    background-color:var(--colorfondo);
+    
+}
+
+/*input{
+    background-color: beige;
+    color: darkblue;
+}
+button{
+    background-color: crimson;
+    color: aliceblue;
+}*/
+.caja5{
+    display: flex;
+    justify-content: left;
+}
+.btn-group{
+    background-color: rgb(118, 172, 223);
+    color: antiquewhite;
+
+}
+.btn-group:hover{
+   display: flex;
+    background-color:coral;
+    gap: 10px;
+}
+.dropdown{
+
+    background-color: var(--colorhover);
+    color: blue;
+
+}
+
+label{
+    color: blue;
+    font-size: 20px;
+    
+}
+a:link{
+    color: coral;
+}
+a:visited{
+    color: crimson;
+
+}
+a:hover{
+    background-color: var(--colorhover);
+    color: blue;
+}
+a{
+    text-decoration: none;
+}
+
+.mapa{  /*footer formulario*/
+
+margin: 30px;
+
+}
+
+nav a{
+
+    text-align: left;
+}
+/*background-color: rgba(255, 0, 21, 0.712);
+    width: 300px;
+    height: 450px;
+    color: rgb(255, 248, 240);
+    align-self:flex-start;
+    display: flex;
+    align-items:flex-end;
+    font-size: 0.5em;
+    flex-flow: nowrap;
+    gap: 5px; /*espaciado
+}*/
+
+/*.flex-container{
+display: flex;
+flex-flow: row nowrap;
+gap: 15px;
+justify-content: space-around; /*alineacion horizontal*/
+/*align-items:flex-end;/*alineacion horizontal*/
+/*align-content: ; es para trabajar con muchas cajas en conjunto
+
+}*/
+
+.flex-container{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 60px;
+    justify-content:center;/*alineacion horizontal*/
+    /*align-items:flex-end;/*alineacion horizontal*/
+    /*align-content: ; es para trabajar con muchas cajas en conjunto*/
+    
+     
+}
+.img-what{
+    background-color: forestgreen;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    justify-content: space-around;
+    width: 10px;
+    height: 10px;
+    align-self: flex-start;
+
+}
+.img-container1{
+    background-color: blue;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    justify-content: space-around;
+    width: 50px;
+    height: 50px;
+}
+
+/*INDEX*/
+
+/*.contenedor{
+    display:flex;
+    margin-top: 0px;
+    background-color: aqua;
+    padding: 40px;
+    margin: 20px;
+}*/
+.flexible{
+    width: 900px;
+    display: flex;
+    flex-flow: row nowrap;/* flex-direction: ;flex wrap */
+    gap: 3px;
+    /*justify-content: space-around;*/
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.flexible div{
+    
+    display: inline;
+    align-items: flex-end;
+    
+    
+}
+
+.flex{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    background-color: rgb(21, 117, 243);
+    color:white;
+    font-size: 1.5em; 
+}   
+
+/*div nav a{
+    margin-left: 10px;
+    text-align: left;
+}*/
+.caja4{
+    display: inline;
+    flex-flow: row nowrap;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+/*.prueba{
+    margin-left: 80px;
+    align-content: center;
+}*/
+
+.flex-container{
+    display: flex;
+    flex-flow: row nowrap;/* flex-direction: ;flex wrap */
+    gap: 10px;
+    justify-content:space-around;
+    /*flex-grow: 2; flex-shrink:1;
+    flex-basis: 10%;*/
+
+}
+.caja1{
+ display: inline;
+ 
+/* gap: 10px;*/
+}
+
+.caja2{
+ display:inline;
+ order: 3;
+ /*gap: 10px;*/
+}
+
+.caja3{
+ display: inline;
+ /*gap: 10px;*/
+}
+
+.flexbox{
+display: flex;
+justify-content: center;
+
+}
+.item{
+    background-color: rgb(21, 117, 243);
+    color: rgb(243, 247, 240);    
+    font-size: 1.5em;
+
+}
+
+.violeta{
+  font-size:var(--font-chica) ;
+  background-color: dodgerblue;
+  color: var(--colorfuente);
+
+
+
+
+}
+
+
+
+/*.formato{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    padding-left: 0px;
+    background-color: aquamarine;
+    color:white;
+    font-size: 16px;
+    font-weight: 100px;
+    height: 200px;
+    width: 800px;
+    border: 2px dashed red;
+    background-image:url("ELCI.png");
+   /* background-repeat: no-repeat;*/
+    /*background-size: contain;/*cover
+    background-repeat: repeat-y;
+    
+}*/
+
+/*.img-container{
+    text-align: left;
+    display: block;
+    border: 10px;
+
+
+}*/
